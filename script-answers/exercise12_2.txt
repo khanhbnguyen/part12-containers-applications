@@ -1,0 +1,19 @@
+Script started on 2024-03-19 00:19:25-07:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="204" LINES="50"]
+[?2004h]0;khanh@khanh: ~/part12-containers-applications[01;32mkhanh@khanh[00m:[01;34m~/part12-containers-applications[00m$ docker run -it ubuntu bash
+[?2004ldocker: permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Head "http://%2Fvar%2Frun%2Fdocker.sock/_ping": dial unix /var/run/docker.sock: connect: permission denied.
+See 'docker run --help'.
+[?2004h]0;khanh@khanh: ~/part12-containers-applications[01;32mkhanh@khanh[00m:[01;34m~/part12-containers-applications[00m$ docker run -it ubuntu bash[1@s[1@u[C[1@d[1@o[1@ 
+[?2004l[sudo] password for khanh: 
+Unable to find image 'ubuntu:latest' locally
+latest: Pulling from library/ubuntu
+
+[1A[2Kbccd10f490ab: Pulling fs layer [1B[1A[2Kbccd10f490ab: Downloading [>                                                  ]  298.2kB/29.54MB[1B[1A[2Kbccd10f490ab: Downloading [=======>                                           ]  4.627MB/29.54MB[1B[1A[2Kbccd10f490ab: Downloading [=================>                                 ]  10.19MB/29.54MB[1B[1A[2Kbccd10f490ab: Downloading [==========================>                        ]  15.46MB/29.54MB[1B[1A[2Kbccd10f490ab: Downloading [====================================>              ]  21.65MB/29.54MB[1B[1A[2Kbccd10f490ab: Downloading [=============================================>     ]  26.62MB/29.54MB[1B[1A[2Kbccd10f490ab: Verifying Checksum [1B[1A[2Kbccd10f490ab: Download complete [1B[1A[2Kbccd10f490ab: Extracting [>                                                  ]  327.7kB/29.54MB[1B[1A[2Kbccd10f490ab: Extracting [========>                                          ]  4.915MB/29.54MB[1B[1A[2Kbccd10f490ab: Extracting [==============>                                    ]   8.52MB/29.54MB[1B[1A[2Kbccd10f490ab: Extracting [======================>                            ]  13.43MB/29.54MB[1B[1A[2Kbccd10f490ab: Extracting [==================================>                ]  20.32MB/29.54MB[1B[1A[2Kbccd10f490ab: Extracting [===========================================>       ]  25.56MB/29.54MB[1B[1A[2Kbccd10f490ab: Extracting [=============================================>     ]  26.87MB/29.54MB[1B[1A[2Kbccd10f490ab: Extracting [=================================================> ]  29.16MB/29.54MB[1B[1A[2Kbccd10f490ab: Extracting [==================================================>]  29.54MB/29.54MB[1B[1A[2Kbccd10f490ab: Pull complete [1BDigest: sha256:77906da86b60585ce12215807090eb327e7386c8fafb5402369e421f44eff17e
+Status: Downloaded newer image for ubuntu:latest
+[?2004h]0;root@45a682da2892: /root@45a682da2892:/# mkdir -p /usr/src/app
+[?2004l[?2004h]0;root@45a682da2892: /root@45a682da2892:/# touch /usr/src/app/index.js
+[?2004l[?2004h]0;root@45a682da2892: /root@45a682da2892:/# [Kexit
+[?2004lexit
+[?2004h]0;khanh@khanh: ~/part12-containers-applications[01;32mkhanh@khanh[00m:[01;34m~/part12-containers-applications[00m$ exit
+[?2004lexit
+
+Script done on 2024-03-19 00:20:05-07:00 [COMMAND_EXIT_CODE="0"]
