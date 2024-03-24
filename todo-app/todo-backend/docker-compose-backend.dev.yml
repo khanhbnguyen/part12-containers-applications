@@ -10,9 +10,12 @@ services:
       - 3000:3000
     container_name: todo-backend-dev # This will name the container hello-front-dev
     environment: 
+      # - REDIS_URL=//host.docker.internal:6379
+      # - MONGO_URL=mongodb://root:password@host.docker.internal:3456/the_database
       - REDIS_URL=//redis:6379
       - MONGO_URL=mongodb://root:password@mongo:27017/the_database
-
+    # extra_hosts:
+    #   - "host.docker.internal:host-gateway"
 
   debug-helper:
     image: busybox
