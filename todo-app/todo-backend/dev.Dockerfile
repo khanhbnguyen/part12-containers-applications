@@ -3,7 +3,7 @@ FROM node:16
 WORKDIR /usr/src/app/todo-backend
 
 COPY --chown=node:node . .
-RUN npm ci 
+RUN npm install 
 
 ENV DEBUG=playground:*
 

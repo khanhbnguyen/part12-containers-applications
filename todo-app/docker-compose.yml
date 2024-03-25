@@ -1,11 +1,6 @@
 services:
   app:
     image: todo-frontend
-    # build:
-    #   context: . # The context will pick this directory as the "build context"
-    #   dockerfile: ./todo-frontend/dev.Dockerfile # This will simply tell which dockerfile to read
-    volumes:
-      - ./todo-frontend:/usr/src/app # The path can be relative, so ./ is enough to say "the same location as the docker-compose.yml"
     container_name: todo-frontend # This will name the container hello-front-dev
   mongo:
     image: mongo
@@ -27,11 +22,6 @@ services:
       - ./redis_data:/data
   server:
     image: todo-backend
-    # build:
-    #   context: . # The context will pick this directory as the "build context"
-    #   dockerfile: dev.Dockerfile # This will simply tell which dockerfile to read
-    volumes:
-      - ./todo-backend:/usr/src/app # The path can be relative, so ./ is enough to say "the same location as the docker-compose.yml"
     container_name: todo-backend # This will name the container hello-front-dev
     environment: 
       - REDIS_URL=//redis:6379
